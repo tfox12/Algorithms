@@ -70,11 +70,6 @@ merge_sort(int * list, int length)
     
     if(length <= 1) return;
 
-    printf("sorting list: %i", list[0]);
-    for(i = 1; i < length; ++i)
-        printf(", %i", list[i]);
-    printf("\n");
-
     left_list = merge_sort_make_left_list(list, length);
     right_list = merge_sort_make_right_list(list, length);
     
